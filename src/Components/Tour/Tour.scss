@@ -1,0 +1,55 @@
+$color: #1fbcbd;
+
+.tour-img-text{
+    
+    margin: 50px 0px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(174,167,214,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(174,167,214,1);
+    box-shadow: 10px 10px 5px 0px rgba(174,167,214,1);
+
+    .tour-text{
+        padding: 20px;
+        h3{
+            color: #1fbcbd;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        h5{
+            font-size: 15px;
+            font-weight: 600;
+        }
+        p{
+            display: inline-block;
+            font-size: 15px;
+        }
+        span{
+            margin-left: 5px;
+            i{
+                color: $color;
+            }
+        }
+    }
+    .tour-img{
+        position: relative;
+        img{
+            width: 100%;
+            height: 240px;
+        }
+    }
+    .close-btn{
+        position: absolute;
+        top: 10%;
+        right: 6%;
+        font-size: 30px;
+        color: #1fbcbd;
+        cursor: pointer;
+        display: none;
+    }
+    &:hover{
+        .close-btn{
+            display: block;
+        }
+    }
+}
